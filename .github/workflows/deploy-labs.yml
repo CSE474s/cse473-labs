@@ -25,7 +25,7 @@ jobs:
       - name: Install JupyterLite
         run: pip install jupyterlite jupyter-server
       - name: Build JupyterLite site
-        run: jupyter lite build --contents content --output-dir _output
+        run: jupyter lite build --contents notebooks --output-dir _output
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _output
