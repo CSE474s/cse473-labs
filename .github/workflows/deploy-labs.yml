@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install JupyterLite
-        run: pip install jupyterlite
+        run: pip install jupyterlite jupyter-server
       - name: Build JupyterLite site
         run: jupyter lite build --contents content --output-dir _output
       - uses: actions/upload-pages-artifact@v3
